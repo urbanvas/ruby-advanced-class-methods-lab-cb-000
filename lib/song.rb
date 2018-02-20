@@ -51,4 +51,8 @@ class Song
     ting = self.new_from_filename(data)
     ting
   end
+
+  def self.destroy_all
+    @@all = []
+  end
 end
