@@ -41,7 +41,7 @@ class Song
   end
 
   def self.new_from_filename(string)
-    arr = string.slice(0...-4).split("-").map! {|a| a.squish}
+    arr = string.slice(0...-4).split("-").map! {|a| a.strip!}
     ting = self.create_by_name(arr[1])
     ting.artist_name = arr[0]
     ting
