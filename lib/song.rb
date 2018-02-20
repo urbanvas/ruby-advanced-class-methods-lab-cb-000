@@ -37,6 +37,6 @@ class Song
   end
 
   def self.alphabetical
-    self.all.sort
+    self.all.sort_by { |word| word.downcase }
   end
 end
