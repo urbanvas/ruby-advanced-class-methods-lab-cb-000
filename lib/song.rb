@@ -39,4 +39,9 @@ class Song
   def self.alphabetical
     self.all.sort_by { |word| word.name }
   end
+
+  def self.new_from_filename(string)
+    arr = string.slice(0...-4).split("-")
+    
+  end
 end
