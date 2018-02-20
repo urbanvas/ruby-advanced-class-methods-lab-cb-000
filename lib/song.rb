@@ -46,4 +46,8 @@ class Song
     ting.artist_name = arr[0]
     ting
   end
+
+  def self.create_from_filename
+
+  end
 end
