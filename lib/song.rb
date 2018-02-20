@@ -47,7 +47,7 @@ class Song
     ting
   end
 
-  def self.create_from_filename
+  def self.create_from_filename(data)
     ting = self.new_from_filename(data)
     ting
   end
