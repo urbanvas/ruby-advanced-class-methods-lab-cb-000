@@ -42,7 +42,7 @@ class Song
 
   def self.new_from_filename(string)
     arr = string.slice(0...-4).split("-")
-    ting = self.new
+    ting = self.create_by_name(data[1])
     ting.name = arr[1]
     ting.artist_name = arr[0]
     ting
